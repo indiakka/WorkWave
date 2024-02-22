@@ -78,13 +78,11 @@
   background-color: brown;
   color: rgb(40, 17, 188);
   text-decoration: none;
-
 }
 
 .menu__btn {
   display: none;
 }
-
 
 
 .cart-badge {
@@ -113,9 +111,6 @@
 .button-nav {
   padding: 10px;
   font-size: 21px;
-
-
-
 }
 
 
