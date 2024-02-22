@@ -19,6 +19,7 @@ import '../page/Cart.css';
 import '../Components/principal/Slider.css'
 import '../page/Aboutus.css'
 import '../Components/searchItems/SearchItems.css'
+import Contact from '../page/Contact/Contact';
 
 
 function RoutesProject() {
@@ -32,7 +33,8 @@ function RoutesProject() {
           <Route path='/Products' element={<Products />} />
           <Route path='/Aboutus' element={<AboutUs />} />
           <Route path='/Search' element={<Search />} />
-          <Route path='/Wishlist' element={<FavoriteList />} />
+        <Route path='/Wishlist' element={<FavoriteList />} />
+        <Route path='/Contact' element={<Contact />} />
         </Routes>
         <Footer />
     
