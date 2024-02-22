@@ -10,15 +10,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 8px;
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 180px); 
 }
 
 .cart-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .cart-item {
@@ -45,17 +42,15 @@
   display: flex;
   gap: 10px;
 }
-
 .section-title-cart {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom:1rem;
 }
 
 .cart-summary {
   margin-top: 20px;
 }
-
 /* Estilos generales para los botones de cart-actions */
 .cart-actions {
   display: flex;
@@ -103,23 +98,22 @@
 
 /* Estilos para botón de incrementar */
 .boton-small-pos {
-  background-color: #ABC07F;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  margin-right: 5px;
-  margin-left: 1rem;
-  cursor: pointer;
+background-color: #ABC07F;
+color: #fff;
+border: none;
+padding: 8px 12px;
+margin-right: 5px;
+margin-left:1rem;
+cursor: pointer;
 }
 
 /* Estilos para botón de disminuir */
 .boton-small-neg {
-  background-color: #bf4f4e;
-  ;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
+background-color: #bf4f4e;;
+color: #fff;
+border: none;
+padding: 8px 12px;
+cursor: pointer;
 }
 
 
@@ -133,8 +127,8 @@
   .cart-actions button {
     margin: 10px 0;
   }
-
+ 
   .cart-section {
     max-width: 230px;
-  }
+}
 }

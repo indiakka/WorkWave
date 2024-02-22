@@ -1,110 +1,59 @@
 import axios from 'axios';
-import { useEffect, useState, useContext } from 'react';
-import { CartContext } from '../context/CartContext';
-import Card from './Card/Card';
+import { useEffect, useState } from 'react';
 
+// Cambia la URI para apuntar a la nueva ruta del backend
 const URI = 'http://localhost:8080/workwave/api/announcements';
 
-const CompShowAnnouncements = () =>
-{
-  const [ announcements, setAnnouncements ] = useState( [] );
-  const [ currentPage, setCurrentPage ] = useState( 1 );
+const CompShowAnnouncements = () => {
+  const [announcements, setAnnouncements] = useState([]);
+  const [selectedAnnouncement, setSelectedAnnouncement] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
   const announcementsPerPage = 3; // Número de anuncios por página
-  const [ checkedList, setCheckedList ] = useState( {} );
-  const { addToCart, updateCartItemCount } = useContext( CartContext );
+  const [checkedList, setCheckedList] = useState({}); // Estado individual de selección para cada tarjeta
 
-  useEffect( () =>
-  {
+  useEffect(() => {
     getAnnouncements();
-  }, [] );
+  }, []);
 
-  const getAnnouncements = async () =>
-  {
-    try
-    {
-      const res = await axios.get( URI );
-      setAnnouncements( res.data );
+  const getAnnouncements = async () => {
+    try {
+      const res = await axios.get(URI);
+      setAnnouncements(res.data);
+      // Inicializa el estado de selección para cada tarjeta con el estado actual
       const initialCheckedList = {};
-      res.data.forEach( announcement =>
-      {
-        initialCheckedList[ announcement.id ] = false;
-      } );
-      setCheckedList( initialCheckedList );
-    } catch ( error )
-    {
-      console.error( 'Error al obtener los anuncios:', error );
+      res.data.forEach(announcement => {
+        initialCheckedList[announcement.id] = false;
+      });
+      setCheckedList(initialCheckedList);
+    } catch (error) {
+      console.error('Error al obtener los anuncios:', error);
     }
   };
 
   const indexOfLastAnnouncement = currentPage * announcementsPerPage;
   const indexOfFirstAnnouncement = indexOfLastAnnouncement - announcementsPerPage;
-  const currentAnnouncements = announcements.slice( indexOfFirstAnnouncement, indexOfLastAnnouncement );
-  const totalPages = Math.ceil( announcements.length / announcementsPerPage );
+  const currentAnnouncements = announcements.slice(indexOfFirstAnnouncement, indexOfLastAnnouncement);
 
-  const handlePageChange = ( newPage ) =>
-  {
-    setCurrentPage( newPage );
-  };
-
-
-
-  const handleAddToCart = ( announcement ) =>
-  {
-    addToCart( { ...announcement, quantity: ( announcement.quantity || 0 ) + 1 } );
-    if ( updateCartItemCount )
-    {
-      updateCartItemCount();
-    }
-  };
+  // Añade aquí el resto de tu lógica de componente...
 
   return (
-    <section className="product-section">
+    <div className="product-section">
       <div>
-        <h1 className="section-title">Encuentra tu oferta de empleo</h1>
+        {currentAnnouncements.map((announcement) => (
+          <div key={announcement.id}>
+            <h1>{announcement.companyName}</h1>
+            <h2>{announcement.jobName}</h2>
+            <p>{announcement.province}</p>
+            <p>{announcement.jobRequirements}</p>
+            <p>{announcement.jobDescription}</p>
+            <p>{announcement.salary}</p>
+            <p>{announcement.publicationDate}</p>
+          </div>
+        ))}
       </div>
-      <div className='slider'>
-        <div className="product-list">
-          {currentAnnouncements.map( ( announcement ) => (
-            <div key={announcement.id} className="product-item">
-              <h2 className="product-name">Empresa:</h2>
-              <p className="product-list">{announcement.companyName}</p>
-              <h2 className="product-name">Puesto de trabajo:</h2>
-              <p className="product-list">{announcement.jobName}</p>
-              <h2 className="product-name">Provincia:</h2>
-              <p className="product-list">{announcement.province}</p>
-              <h2 className="product-name">Requisitos:</h2>
-              <p className="product-list">{announcement.jobRequirements}</p>
-              <p className="product-name">Descripción del trabajo:</p>
-              <p className="product-list">{announcement.jobDescription}</p>
-              <p className="product-name">Salario Anual:</p>
-              <p className="product-list">{announcement.salary} $</p>
-              <p className="product-name">Fecha de creacion:</p>
-              <p className="product-list">{announcement.publicationDate}</p>
-              <button className="add-to-cart-button" onClick={() => handleAddToCart( announcement )}>
-                Apuntarse
-              </button>
-              <Card productData={announcement} />
-            </div>
-          ) )}
-        </div>
-        <div className="pagination">
-          <button
-            onClick={() => handlePageChange( currentPage - 1 )}
-            disabled={currentPage === 1}
-            className="pagination-button"
-          ><i className="fa-solid fa-arrow-left"></i></button>
-
-          <span className="pagination-info">{currentPage} de {totalPages}</span>
-
-          <button
-            onClick={() => handlePageChange( currentPage + 1 )}
-            disabled={currentPage === totalPages}
-            className="pagination-button"
-          ><i className="fa-solid fa-arrow-right"></i></button>
-        </div>
-      </div>
-    </section>
+    </div>
   );
-};
+        }
+  
 
 export default CompShowAnnouncements;

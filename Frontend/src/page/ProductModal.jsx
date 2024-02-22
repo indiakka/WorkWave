@@ -28,7 +28,7 @@ const ProductModal = ({ product, closeModal }) => {
            <div className='price'>
          <p>Precio: <strong>{product.price}€</strong></p>
              <button className="add-to-cart-button1" onClick={() => handleAddToCart(product)}>
-              Apuntarse
+              Agregar al carrito
             </button>
          </div>
       </div>

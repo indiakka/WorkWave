@@ -5,9 +5,9 @@ const Aboutus = () => {
   const carouselRef = useRef(null);
 
   const images = [
-    "images/aloe.jpg",
-    "images/anemona.jpg",
-    "images/cactus.png",
+    "images/equipo.jpg",
+    "images/equipo2.jpg",
+    "images/equipo3.jpg",
   ];
 
   useEffect(() => {
@@ -40,39 +40,45 @@ const Aboutus = () => {
       <hr />
       <section className="about-content">
         <p className="welcome">
-          ¡Bienvenidos a nuestro increíble mundo verde, donde las plantas son las estrellas y la diversión nunca se marchita!
+          En WorkWave, nos apasiona ayudar a los desarrolladores junior a
+          encontrar empleos gratificantes y a impulsar sus carreras en el
+          emocionante mundo del desarrollo de software.{" "}
         </p>
         <section className="about-info">
-          <div >
-             <div>
-          <p>En nuestro fascinante rincón cibernético, somos más que una simple tienda de plantas;
-          </p>
-          <p>
-            Somos la última parada para amantes de las plantas, expertos en jardinería y aquellos que aún están intentando averiguar si regar las suculentas una vez al mes es suficiente.
-          </p>
-        </div>
-       
-          <div >
-            <p>
-              En Matoplantas, no solo te ofrecemos plantas, ¡te ofrecemos una experiencia botánica que nunca olvidarás!</p>
-            <p>
-              ¿Te preguntas por qué nuestras plantas siempre lucen tan felices?</p>
-            <p>
-              La respuesta es simple: ¡les damos amor, atención y, ocasionalmente, música de fondo para alegrar sus días (y noches)!
-            </p>
-          </div>
+          <div>
+            <div>
+              <p>
+                Nuestra misión es conectar a talentosos desarrolladores junior
+                con empresas innovadoras que buscan nuevos miembros para sus
+                equipos de desarrollo. Entendemos que comenzar en el campo del
+                desarrollo puede ser desafiante, y estamos aquí para hacer que
+                ese proceso sea más fácil y exitoso para ti.
+              </p>
+            </div>
+            <div>
+              <p>
+                Nos especializamos en ofrecer oportunidades laborales adaptadas
+                específicamente a desarrolladores junior. Ya sea que estés
+                recién graduado, buscando tu primer empleo en el campo o en
+                busca de una nueva oportunidad para expandir tus habilidades,
+                tenemos algo para ti.
+              </p>
+            </div>
           </div>
         </section>
 
         <section className="team-section">
           <div className="team">
             <h2>Nuestro Equipo</h2>
-          <p>
-            Nuestro equipo está formado por jardineros locos, expertos en clorofila y amantes de la hoja verde que están siempre dispuestos a compartir consejos, trucos y chistes verdes. Así que, si alguna vez te preguntas por qué tu cactus te mira de esa manera extraña, ¡no dudes en consultarnos! Estamos aquí para desmitificar el misterioso mundo de las plantas y convertirlo en una fiesta inolvidable.
-          </p>
-          <p>
-            Así que, ya sea que estés buscando tu primera planta o simplemente quieras agregar una más a tu jungla personal, Matoplantas es el lugar donde las risas son tan abundantes como las hojas. ¡Únete a la diversión y haz que tu espacio vital sea más verde y alegre con nosotros!
-          </p>   
+            <p>
+              En WorkWave, contamos con un equipo dedicado y apasionado que
+              trabaja incansablemente para ayudarte a encontrar las mejores
+              oportunidades laborales y apoyarte en tu camino hacia el éxito en
+              el desarrollo de software. Con una combinación única de
+              experiencia en reclutamiento, desarrollo de software y apoyo
+              profesional, nuestro equipo está aquí para brindarte el mejor
+              servicio posible.
+            </p>
           </div>
           <div className="carousel" ref={carouselRef}>
             {images.map((src, index) => (
@@ -87,9 +93,7 @@ const Aboutus = () => {
         </section>
       </section>
     </section>
-
   );
 };
 
 export default Aboutus;
-

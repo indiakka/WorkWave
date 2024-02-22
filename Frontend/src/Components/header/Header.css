@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
 
 /* Header Styles */
 .header {
@@ -20,7 +20,13 @@
   /* Añadido espaciado a los lados */
   padding-right: 350px;
   font-size: 21px;
+  
+ 
   }
+  
+
+
+
 
 
 .logoStyle {
