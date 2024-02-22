@@ -1,0 +1,136 @@
+[
+    {
+        "id": 1,
+        "name": "Anemona",
+        "price": 10,
+        "category": "Flores",
+        "description": "Sumérgete en la gracia etérea de la anémona. Con sus pétalos delicados y centros llamativos, esta flor perenne añade un toque de elegancia salvaje a cualquier jardín. Disfruta de su encanto efímero que florece en primavera, creando una visión mágica y fugaz.",
+        "imgUrl": "./images/anemona.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Geranio blanco",
+        "price": 15,
+        "category": "Flores",
+        "description": "Descubre la pureza y la simplicidad con el geranio blanco. Con sus flores de un blanco inmaculado y hojas vibrantes, esta variante del geranio añade un toque de frescura y sofisticación. Perfecto para iluminar jardines y espacios al aire libre con su belleza atemporal.",
+        "imgUrl": "./images/geranio2.jpg"
+      
+    },
+    {
+        "id": 3,
+        "name": "Lirio",
+        "price": 20,
+        "category": "Flores",
+        "description": "Admira la majestuosidad del lirio. Con sus tallos altos y flores exquisitas, esta planta perenne es un símbolo de pureza y nobleza. Disfruta de su fragancia embriagadora y su presencia imponente en arreglos florales, añadiendo un toque de gracia atemporal.",
+        "imgUrl": "./images/lirio.jpg"
+        
+    },
+    {
+        "id": 4,
+        "name": "Geranio Rosa",
+        "price": 30,
+        "category": "Flores",
+        "description": "Sumérgete en la calidez y la alegría con el geranio rosa. Sus flores de tonos rosados vibrantes aportan vitalidad y energía a cualquier espacio. Perfecto para jardines y macetas, este geranio es una explosión de color que alegra los días más grises.",
+        "imgUrl": "./images/geranio4.jpg"
+     
+    },
+    {
+        "id": 5,
+        "name": "Margarita",
+        "price": 35,
+        "category": "Flores",
+        "description": "Celebra la simplicidad encantadora de la margarita. Con sus pétalos blancos y amarillos, esta flor clásica es un símbolo de inocencia y pureza. Agrega un toque de frescura y encanto campestre a tus jardines y ramos de flores.",
+        "imgUrl": "./images/margarita.jpg"
+
+    },
+    {
+        "id": 6,
+        "name": "Geranio Rojo",
+        "price": 45,
+        "category": "Flores",
+        "description": "Celebra la resistencia y la singularidad con nuestro cactus. Esta planta robusta y de bajo mantenimiento es ideal para aquellos que buscan un toque de desierto en su hogar. Con formas fascinantes y espinas intrincadas, el cactus aporta un toque moderno y audaz a cualquier entorno.",
+        "imgUrl": "./images/geranio6.jpg"
+       
+    },
+    {
+        "id": 7,
+        "name": "Buxus",
+        "price": 55,
+        "category": "Setos",
+        "description": "Descubre la elegancia atemporal del buxus. Este arbusto de hoja perenne, con su follaje denso y verde oscuro, es perfecto para crear bordes y formas definidas en jardines. Su versatilidad y bajo mantenimiento hacen del buxus una elección clásica para la arquitectura del paisaje.",
+        "imgUrl": "./images/buxus.png"
+     
+    },
+    {
+        "id": 8,
+        "name": "Cactus",
+        "price": 25,
+        "category": "Cactus",
+        "description": "Celebra la resistencia y la singularidad con nuestro cactus. Esta planta robusta y de bajo mantenimiento es ideal para aquellos que buscan un toque de desierto en su hogar. Con formas fascinantes y espinas intrincadas, el cactus aporta un toque moderno y audaz a cualquier entorno.",
+        "imgUrl": "../images/cactus2.jpg"
+       
+    },
+    {
+        "id": 9,
+        "name": "Cactus",
+        "price": 55,
+        "category": "Cactus",
+        "description": "Celebra la resistencia y la singularidad con nuestro cactus. Esta planta robusta y de bajo mantenimiento es ideal para aquellos que buscan un toque de desierto en su hogar. Con formas fascinantes y espinas intrincadas, el cactus aporta un toque moderno y audaz a cualquier entorno.",
+        "imgUrl": "../images/cactus1.jpg"
+     
+    },
+    {
+        "id": 10,
+        "name": "Dracaena",
+        "price": 35,
+        "category": "Cactus",
+        "description": "Conoce la belleza única de la Dracaena Marginata, comúnmente conocida como cactus con un palo. Con su tronco delgado y hojas largas y estrechas, esta planta agrega una elegancia tropical a cualquier espacio. Fácil de cuidar, es perfecta para aquellos que desean una planta llamativa y resistente.",
+        "imgUrl": "../images/cactus.png"
+    },
+    {
+        "id": 11,
+        "name": "Bonsái",
+        "price": 35,
+        "category": "De interior",
+        "description": "Experimenta la serenidad y la elegancia del bonsái. Esta obra maestra en miniatura captura la esencia de la naturaleza en un formato compacto. Cuida y da forma a tu bonsái para crear un vínculo único con esta representación artística de la belleza natural.",
+        "imgUrl": "../images/bonsai.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Aloe Vera",
+        "price": 55,
+        "category": "Cactus",
+        "description": "Descubre los beneficios curativos y decorativos del aloe vera. Con sus hojas suculentas y propiedades calmantes, esta planta versátil es un tesoro en cualquier hogar. Agrega un toque de frescura y bienestar con el aloe vera, que no solo es hermoso sino también beneficioso para la piel.",
+        "imgUrl": "../images/aloe.jpg"
+    }, {
+        "id": 13,
+        "name": "Calathea",
+        "price": 55,
+        "category": "De interior",
+        "description": "Sumérgete en el mundo de la elegancia tropical con la calathea. Sus hojas exquisitamente diseñadas, con patrones únicos, aportan un toque de exotismo a cualquier espacio. Ideal para aquellos que buscan una planta de interior llamativa y fácil de cuidar.",
+        "imgUrl": "../images/calathea.jpg"
+    }, {
+        "id": 14,
+        "name": "Tulipa",
+        "price": 55,
+        "category": "Flores",
+        "description": "Sumérgete en la elegancia vibrante del tulipán. Con sus pétalos suaves y colores vibrantes, esta flor encantadora iluminará cualquier jardín o arreglo floral. Ideal para expresar amor y gratitud, el tulipán es la adición perfecta para resaltar la belleza natural.",
+        "imgUrl": "../images/tulipanes.png"
+    },
+    {
+        "id": 15,
+        "name": "Aeonium",
+        "price": 55,
+        "category": "Cactus",
+        "description": "Explora la fascinante belleza de la aeonium. Esta suculenta única presenta rosetas de hojas exuberantes y colores cautivadores. Perfecta para jardines de rocas o macetas, la aeonium añade un toque de drama y encanto a cualquier paisaje.",
+        "imgUrl": "../images/aeonium.jpg"
+    }, 
+    {
+        "id": 16,
+        "name": "Pensamiento",
+        "price": 55,
+        "category": "Flores",
+        "description": "Celebra la delicadeza y la simpatía con el pensamiento. Con sus flores multicolores y carácter encantador, esta planta anual es perfecta para jardines y macetas. Los pensamientos son símbolos encantadores de amistad y afecto, haciendo que cada espacio florezca con alegría y color.",
+        "imgUrl": "../images/pansy.jpg"
+    }
+]

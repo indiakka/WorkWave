@@ -1,0 +1,56 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    width: 100vh;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+  }
+  
+  .modal-content img {
+    max-height: 60vh; 
+    margin-right: 30px; 
+    border-radius: 8px;
+  }
+
+  .info {
+    text-align: left;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .info h2{
+    font-weight: 300;
+  }
+
+  
+  
+  .add-to-cart-button1 {
+    background-color: #bf4f4e; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 13px;
+    font-weight: 300; /* Tamaño de la fuente del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Añade esquinas redondeadas al botón */
+    margin-bottom: 10px;
+   display: flex;
+  }
+  
+  .add-to-cart-button1:hover {
+    background-color: #953c3b; /* Cambia el color de fondo al pasar sobre el botón */
+  }
