@@ -48,7 +48,7 @@ function SearchItems ()
     console.log( "Anuncios antes del filtro:", announcements ); // Verifica los datos antes del filtro
 
     const filteredItems = announcements.filter( announcement =>
-      announcement.jobName.toLowerCase().includes( searchTerm.toLowerCase() )
+      announcement.jobName.toLowerCase().includes( searchTerm.toLowerCase() ) || announcement.province.toLowerCase().includes( searchTerm.toLowerCase() )
     );
 
     console.log( "Anuncios después del filtro:", filteredItems ); // Verifica los datos después del filtro
@@ -114,7 +114,7 @@ function SearchItems ()
                   <div className="card-list">
                     <div>Salario: <span className="product-price">{announcement.salary}$</span></div>
                   </div>
-                  <button className='add-to-cart-button' onClick={() => handleAddToCart( announcement )}>Añadir al carrito</button>
+                  <button className='add-to-cart-button' onClick={() => handleAddToCart( announcement )}>Apuntarse</button>
                 </div>
               ) )}
             </div>

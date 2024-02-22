@@ -35,6 +35,9 @@
 }
 
 .product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid #ddd;
   border-radius: 15px;
   margin: 10px;

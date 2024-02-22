@@ -38,7 +38,7 @@ const FavoriteList = () =>
                         <p className="cart-item-price">Salario: {item.salary}$</p>
                         <p className="product-list" >Fecha de Publicacion:{item.publicationDate}</p>
                         <div className='botonesWish'>
-                            <button className="add-to-cart-button" onClick={() => handleAddToCart( item )}>Agregar al carrito</button>
+                            <button className="add-to-cart-button" onClick={() => handleAddToCart( item )}>Apuntarse</button>
                             <button className="add-to-cart-button" onClick={() => { removeFavorite( item ) }}>Quitar de favoritos</button>
                         </div>
                     </div>

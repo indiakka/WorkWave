@@ -66,17 +66,22 @@ const CompShowAnnouncements = () =>
         <div className="product-list">
           {currentAnnouncements.map( ( announcement ) => (
             <div key={announcement.id} className="product-item">
-              <h2 className="product-name">{announcement.companyName}</h2>
-              <h2 className="product-name">{announcement.jobName}</h2>
-              <h3 className="product-name">{announcement.province}</h3>
+              <h2 className="product-name">Empresa:</h2>
+              <p className="product-list">{announcement.companyName}</p>
+              <h2 className="product-name">Puesto de trabajo:</h2>
+              <p className="product-list">{announcement.jobName}</p>
+              <h2 className="product-name">Provincia:</h2>
+              <p className="product-list">{announcement.province}</p>
+              <h2 className="product-name">Requisitos:</h2>
               <p className="product-list">{announcement.jobRequirements}</p>
+              <p className="product-name">Descripción del trabajo:</p>
               <p className="product-list">{announcement.jobDescription}</p>
-              <p className="product-list">Salario Anual:</p>
-              <p className="product-price">{announcement.salary} $</p>
-              <p className="product-list">Fecha de creacion:</p>
+              <p className="product-name">Salario Anual:</p>
+              <p className="product-list">{announcement.salary} $</p>
+              <p className="product-name">Fecha de creacion:</p>
               <p className="product-list">{announcement.publicationDate}</p>
               <button className="add-to-cart-button" onClick={() => handleAddToCart( announcement )}>
-                Agregar al carrito
+                Apuntarse
               </button>
               <Card productData={announcement} />
             </div>
