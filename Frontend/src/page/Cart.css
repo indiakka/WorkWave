@@ -1,0 +1,134 @@
+/* Agrega estos estilos a tu archivo CSS o componente de estilos */
+
+.cart-section {
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  min-height: calc(100vh - 180px); 
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item-name {
+  font-weight: bold;
+}
+
+.cart-item-quantity,
+.cart-item-price,
+.cart-item-total {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 10px;
+}
+.section-title-cart {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom:1rem;
+}
+
+.cart-summary {
+  margin-top: 20px;
+}
+/* Estilos generales para los botones de cart-actions */
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cart-actions button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.cart-actions button {
+  margin: 0 10px;
+}
+
+/* Estilo para el botón de "Vaciar Carrito" */
+.cart-actions button.Vaciar {
+  background-color: #bf4f4e;
+  color: #fff;
+}
+
+/* Estilo para el botón de "Pagar" */
+.cart-actions button.Pay {
+  background-color: #ABC07F;
+  color: rgb(2, 44, 28);
+  border: #ABC07F solid 0.15em;
+  transition: background-color 300ms, color 300ms, transform 0.3s;
+  font-weight: 600;
+}
+
+/* Efecto de escala al pasar el ratón sobre el botón "Pagar" */
+.cart-actions button.Pay:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para el botón de "Volver a la Página de Inicio" */
+.cart-actions button.Inicio {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Estilos para botón de incrementar */
+.boton-small-pos {
+background-color: #ABC07F;
+color: #fff;
+border: none;
+padding: 8px 12px;
+margin-right: 5px;
+margin-left:1rem;
+cursor: pointer;
+}
+
+/* Estilos para botón de disminuir */
+.boton-small-neg {
+background-color: #bf4f4e;;
+color: #fff;
+border: none;
+padding: 8px 12px;
+cursor: pointer;
+}
+
+
+
+@media (max-width: 590px) {
+  .cart-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-actions button {
+    margin: 10px 0;
+  }
+ 
+  .cart-section {
+    max-width: 230px;
+}
+}
