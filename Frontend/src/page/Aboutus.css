@@ -3,6 +3,7 @@
     margin: auto;
     margin-top: 8vh;
     /* padding: 20px; */
+    
 }
 
 .about-content {
@@ -12,10 +13,13 @@
 
 .about-us-tittle {
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 2vh;
     display: flex;
     justify-content: center;
+    
+    
+
 }
 
 .welcome{
@@ -30,6 +34,7 @@
     margin-bottom: 20px;
     line-height: 1.3;
     text-align: center;
+    
 }
 
 
@@ -38,16 +43,17 @@
     font-size: larger;
     margin-bottom: 8vh;
     line-height: 1.3;
+    text-align: left;
+    
 }
 
 .team{
     width: 60%;
-    margin: 50px;
+    
 }
 .team-section h2{
-    margin-left: 15vh;
-    font-weight: 400;
-    text-align: start;
+    font-weight: 500;
+    text-align: start;   
 }
 
 
@@ -56,6 +62,7 @@
     margin-bottom: 15px;
     line-height: 1.5;
     text-align: start;
+    
 }
 
 /* carrusel */
@@ -65,7 +72,7 @@
     height: 410px;
     overflow: hidden;
     justify-content: center;
-    margin-top: -35%;
+    margin-top: -25%;
     margin-left: 65%;
     position: relative;
     z-index: 1;
@@ -81,6 +88,7 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
     z-index: 1;
+    object-fit: cover;
   }
   
   .carousel img.active {
@@ -110,7 +118,8 @@
 
     .team {
       width: 90%;
-      margin: 20px;
+      margin:20px;
+
     }
 
     .team-section h2 {
