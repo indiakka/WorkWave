@@ -15,8 +15,9 @@
     margin: 80px;
 }
 
-.form p, h1{
-    margin:1%;
+.form p,
+h1 {
+    margin: 1%;
 }
 
 .form--inputs--container {
@@ -59,6 +60,11 @@
     display: block;
 }
 
-.buttonEnviar{
-padding: 1% 3%;
+.buttonEnviar {
+    margin-top: 2%;
+    padding: 1% 3%;
+}
+
+article{
+    margin: 1%;
 }
