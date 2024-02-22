@@ -5,6 +5,7 @@ import Footer from '../Components/footer/Footer';
 import Home from '../page/Home';
 import Cart from '../page/Cart';
 import Products from '../page/Products';
+import Contact from '../page/Contact/Contact';
 import Search from '../page/Search';
 import FavoriteList from '../Components/Wish/Wish';
 import AboutUs from '../page/Aboutus'
@@ -33,6 +34,7 @@ function RoutesProject() {
           <Route path='/Aboutus' element={<AboutUs />} />
           <Route path='/Search' element={<Search />} />
           <Route path='/Wishlist' element={<FavoriteList />} />
+          <Route path='/Contact' element={<Contact />} />
         </Routes>
         <Footer />
     
