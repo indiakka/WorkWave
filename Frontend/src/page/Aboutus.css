@@ -1,0 +1,135 @@
+.about-us {
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 8vh;
+    /* padding: 20px; */
+}
+
+.about-content {
+    margin-top: 10px;
+    
+}
+
+.about-us-tittle {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome{
+    font-size: larger;
+    font-weight: 800;
+    text-align: center;
+    margin: 8vh;
+}
+
+.about-content div {
+    font-size: larger;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+
+.team-section {
+    margin-top: 8vh;
+    font-size: larger;
+    margin-bottom: 8vh;
+    line-height: 1.3;
+}
+
+.team{
+    width: 60%;
+    margin: 50px;
+}
+.team-section h2{
+    margin-left: 15vh;
+    font-weight: 400;
+    text-align: start;
+}
+
+
+.team-section p{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: start;
+}
+
+/* carrusel */
+.carousel {
+   
+    display: block;
+    height: 410px;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: -35%;
+    margin-left: 65%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 4%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+  }
+ 
+  /* Estilos para pantallas pequeñas (por ejemplo, teléfonos) */
+@media only screen and (max-width: 700px) {
+    .about-us-tittle {
+      font-size: 36px;
+      margin-bottom: 2vh;
+    }
+
+    .welcome {
+      margin: 4vh;
+    }
+
+    .about-content div {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .team-section {
+      margin-top: 4vh;
+      margin-bottom: 4vh;
+    }
+
+    .team {
+      width: 90%;
+      margin: 20px;
+    }
+
+    .team-section h2 {
+      margin-left: 10px;
+      font-size: 24px;
+    }
+
+    .carousel {
+      height: 250px;
+      margin-top: 5%;
+      margin-left: 25%;
+    }
+
+    .carousel img {
+      width: 200px;
+      height: 200px;
+      border-radius: 4%;
+    }
+
+  }
+
+
