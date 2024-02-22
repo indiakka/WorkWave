@@ -239,12 +239,12 @@
   transform: rotateX(30deg) rotateZ(0);
 }
 
-/* Switch dark */
-body.dark {
-  background-color: rgb(77, 68, 68) !important;
+ /* Switch dark */
+body.dark{
+  background-color: grey!important;
 }
 
-.Corazon {
+.Corazon{
   border: none;
   background: transparent;
   cursor: pointer;
