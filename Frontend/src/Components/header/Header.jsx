@@ -26,15 +26,15 @@ function Header({ cartItemCount }) {
                 <label className="menu__icon" htmlFor="menu__btn" onClick={handleToggleMenu}><span className="navicon"></span></label>
                 {/* <!--Menú--> */}
                 <ul className={`menu ${menuOpen ? 'active' : ''}`}>
-                    <li className="navefect"><NavLink  to="/" onClick={handleNavLinkClick}>Inicio</NavLink></li>
-                    <li className="navefect"><NavLink  to="/Products" onClick={handleNavLinkClick}>Ofertas</NavLink></li>
-                    <li className="navefect"><NavLink  to="/Aboutus" onClick={handleNavLinkClick}>Sobre nosotros</NavLink></li>
+                    <li className="navefect"><NavLink to="/" onClick={handleNavLinkClick}>Inicio</NavLink></li>
+                    <li className="navefect"><NavLink to="/Products" onClick={handleNavLinkClick}>Ofertas</NavLink></li>
+                    <li className="navefect"><NavLink to="/Aboutus" onClick={handleNavLinkClick}>Sobre nosotros</NavLink></li>
                     <button className="button-nav">Registrate</button>
                     <button className="button-nav">Entra</button>
-                    <li><NavLink to="/Search" onClick={handleNavLinkClick}><span className="lupa-badge">{favoriteItems.length}</span>🔎</NavLink></li>
-                    <li><NavLink to="/WishList" onClick={handleNavLinkClick}><span className="heart-badge">{favoriteItems.length}</span>❤️</NavLink></li>
-                    <li><NavLink to="/Search" onClick={handleNavLinkClick}><span className="lupa-badge">{favoriteItems.length}</span>📋</NavLink></li>
-                    
+                    <li><NavLink to="/Search" onClick={handleNavLinkClick}><span className="lupa-badge, nav-icon">{favoriteItems.length}</span>🔎</NavLink></li>
+                    <li><NavLink to="/WishList" onClick={handleNavLinkClick}><span className="heart-badge, nav-icon">{favoriteItems.length}</span>❤️</NavLink></li>
+                    <li><NavLink to="/Search" onClick={handleNavLinkClick}><span className="lupa-badge, nav-icon">{favoriteItems.length}</span>📋</NavLink></li>
+
                 </ul>
             </nav>
         </header>
