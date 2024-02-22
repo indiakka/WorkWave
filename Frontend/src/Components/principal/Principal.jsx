@@ -75,7 +75,7 @@ const prueba = "../../images/prueba.jpg"
         <div className="barrVerde"></div>
         <section className="descuento">
           <div className="porcentaje"><a> </a></div>
-          <p className="textoPromo__porcentaje">Contactanos para una mejor<a className="mataste"> <br />EXPERIENCIA</a></p>
+          <p className="textoPromo__porcentaje">Contactanos para una mejor<a className="experiencia"> <br />EXPERIENCIA</a></p>
           <button className='button' onClick={() => navigate('/Login')}>CONTACTANOS</button>
         </section>
         <NavLink to="/Products" style={{ textDecoration: 'none' }}>

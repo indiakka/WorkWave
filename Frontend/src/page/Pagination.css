@@ -224,8 +224,9 @@
 
  /* Switch dark */
 body.dark{
-  background-color: rgb(77, 68, 68)!important;
+  background-color: grey!important;
 }
+
 .Corazon{
   border: none;
   background: transparent;

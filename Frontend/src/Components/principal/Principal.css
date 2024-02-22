@@ -12,7 +12,7 @@
 .gigante{
     margin-top:5px;
     font-size: 15vw;
-    color:#2B2E4A;
+    color:black;
     text-align: right;
     line-height: 78%;
     font-family: 'Krona One', sans-serif;
@@ -171,7 +171,7 @@
     font-weight: 300;
     font-size: 2.5vw;
 }
-.mataste{
+.experiencia{
     color: black;
     font-family: 'krona one', sans-serif;
     font-weight: 800;
