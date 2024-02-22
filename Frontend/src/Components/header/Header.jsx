@@ -21,7 +21,6 @@ function Header({ cartItemCount }) {
                 <div className="logo">
                     <NavLink to="/"><img className="logoStyle" src="../../images/WorkWave.png" alt="logo" /></NavLink>
                 </div>
-
                 <input className="menu__btn" type="checkbox" id="menu__btn" />
                 <label className="menu__icon" htmlFor="menu__btn" onClick={handleToggleMenu}><span className="navicon"></span></label>
                 {/* <!--Menú--> */}
@@ -31,10 +30,9 @@ function Header({ cartItemCount }) {
                     <li className="navefect"><NavLink to="/Aboutus" onClick={handleNavLinkClick}>Sobre nosotros</NavLink></li>
                     <button className="button-nav">Registrate</button>
                     <button className="button-nav">Entra</button>
-                    <li><NavLink to="/Search" onClick={handleNavLinkClick}><span className="lupa-badge, nav-icon">{favoriteItems.length}</span>🔎</NavLink></li>
+                    <li><NavLink to="/Search" onClick={handleNavLinkClick}>🔎</NavLink></li>
                     <li><NavLink to="/WishList" onClick={handleNavLinkClick}><span className="heart-badge, nav-icon">{favoriteItems.length}</span>❤️</NavLink></li>
                     <li><NavLink to="/Search" onClick={handleNavLinkClick}><span className="lupa-badge, nav-icon">{favoriteItems.length}</span>📋</NavLink></li>
-
                 </ul>
             </nav>
         </header>
